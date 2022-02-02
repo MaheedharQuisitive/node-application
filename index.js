@@ -33,7 +33,7 @@ exports.slack = require('./lib/slack-notifier')
 
 exports.init = ({ pmx = true, slack = false } = {}) =>
   new Promise((resolve, reject) => {
-    const logger = require('@cactus-technologies/logger')
+    const logger = require('@quisitive/logger')
 
     /* Add a process log */
     process.log = logger('process')
