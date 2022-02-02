@@ -1,4 +1,22 @@
 { 
+  "name": "@quisitive/node-application",
+  "private": false,
+  "version": "5.0.2",
+  "description": "Helper to manage PM2 App definitions and process states",
+  "homepage": "https://github.com/tomcwilliamson/cactus/tree/master/packages/application#readme",
+  "bugs": {
+    "url": "https://github.com/tomcwilliamson/cactus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/tomcwilliamson/cactus.git"
+  },
+  "license": "MIT",
+  "author": "Quisitive LLC <support@quisitive.com> (http://quisitive.com)",
+  "contributors": [
+    "Support <support@quisitive.com>"
+  ],  
+  "main": "index.js", 
   "dependencies": {
     "@pm2/io": "^2.0.3",
     "async-exit-hook": "^2.0.1",
@@ -9,8 +27,7 @@
     "lodash": "^4.17.10",
     "pretty-ms": "^3.2.0",
     "request": "^2.87.0"
-  },
-  "description": "Helper to manage PM2 App definitions and process states",
+  }, 
   "devDependencies": {
     "depcheck": "^0.6.9",
     "eslint": "^4.19.1",
@@ -26,8 +43,6 @@
     "npm-run-all": "^4.1.3",
     "prettier": "^1.13.7"
   }, 
-  "main": "index.js",
-  "name": "node-application",
   "peerDependencies": {
     "@quistive/logger": "^3.0.1"
   },
@@ -42,6 +57,5 @@
     "test:lint": "eslint --ignore-path .gitignore '**/*.js'",
     "test:outdated": "npm outdated --long || true",
     "todos": "leasot './**/*' -Sx -i './node_modules/**/*'"
-  },
-  "version": "6.0.0"
+  }
 }
